@@ -12,3 +12,6 @@ zstyle ':completion:*:options' auto-description '%d'
 zstyle ':completion:*:*:*:*:processes' command 'ps -u $LOGNAME -o pid,user,command -w'
 # colorful kill completion
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;36=0=01'
+
+# Color completion for some things.
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
