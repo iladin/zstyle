@@ -1,2 +1,2 @@
 # zstyle
-Controls zsh ztyle
+Controls zsh zstyle
