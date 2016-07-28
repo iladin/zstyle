@@ -17,3 +17,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-
 
 # Color completion for some things.
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# Gives more details for completion
+zstyle ':completion:*' verbose yes
