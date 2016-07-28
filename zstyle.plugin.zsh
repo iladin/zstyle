@@ -1,3 +1,5 @@
+# zstyle ‘:completion:function:completer:command:argument:tag’
+
 # Do menu-driven completion.
 zstyle ':completion:*' menu select
 
