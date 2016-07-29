@@ -1,9 +1,7 @@
 # zstyle ‘:completion:function:completer:command:argument:tag’
 
 # Do menu-driven completion.
-zstyle ':completion:*' menu select
-# Important
-zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*' menu select=2 eval "$(dircolors -b)"
 
 
 
