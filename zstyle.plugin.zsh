@@ -2,8 +2,8 @@
 
 # Do menu-driven completion.
 zstyle ':completion:*' menu select=2 eval "$(dircolors -b)"
-
-
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' menu select=long
 
 
 # Use cache
@@ -39,6 +39,7 @@ zstyle ':completion:*' group-name ''
 
 # default: --
 zstyle ':completion:*' list-separator '-->'
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*:manuals' separate-sections true
 
 # Menu select
