@@ -1,7 +1,7 @@
 # zstyle ‘:completion:function:completer:command:argument:tag’
 
 # Do menu-driven completion.
-zstyle ':completion:*' menu select=2 eval "$(dircolors -b)"
+hash dircolors &> /dev/null && zstyle ':completion:*' menu select=2 eval "$(dircolors -b)"
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' menu select=long
 
