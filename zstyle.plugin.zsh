@@ -5,8 +5,7 @@ hash dircolors &> /dev/null && zstyle ':completion:*' menu select=2 eval "$(dirc
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' menu select=long
 
-#Git completion zstyle ':completion:*:*:git:*' script ~/.git-completion.sh
-test -e ~/.git-completion.sh && source ~/.git-completion.sh
+
 
 # Use cache
 zstyle ':completion::complete:*' use-cache on
