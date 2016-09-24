@@ -50,6 +50,9 @@ bindkey -M menuselect '^j' vi-down-line-or-history
 bindkey -M menuselect '^k' vi-up-line-or-history
 bindkey -M menuselect '^l' vi-forward-char
 
+compdef g='git'
+compdef cfg='git'
+
 autoload -Uz cdr
 autoload -Uz history-search-end
 autoload -Uz modify-current-argument
