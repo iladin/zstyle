@@ -49,6 +49,9 @@ zstyle ':completion:*:*:*:*:hosts' list-colors "=*=$color[cyan];$color[bg-black]
 
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
 
+# completion sorting
+zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
+
 # Manpages
 zstyle ':completion:*:manuals'       separate-sections true
 zstyle ':completion:*:manuals.(^1*)' insert-sections   true
