@@ -105,6 +105,9 @@ bindkey -M menuselect '^j' vi-down-line-or-history
 bindkey -M menuselect '^k' vi-up-line-or-history
 bindkey -M menuselect '^l' vi-forward-char
 
+#maps reverse-menu-complete to shift-tab
+bindkey "${terminfo[kcbt]}" reverse-menu-complete
+
 compdef g='git'
 compdef cfg='git'
 
