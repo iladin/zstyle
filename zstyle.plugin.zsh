@@ -115,3 +115,7 @@ bindkey "${terminfo[kcbt]}" reverse-menu-complete
 compdef g='git'
 compdef cfg='git'
 
+## From grml
+
+# don't complete backup files as executables
+zstyle ':completion:*:complete:-command-::commands' ignored-patterns '(aptitude-*|*\~)'
